@@ -4,12 +4,12 @@ Repository for ASU Capstone project in 2022, will be used to hold progress on AR
 # Start Here
 
 ## Install Unity
-[here](https://store.unity.com/#plans-individual)<br />
+Download is [here](https://store.unity.com/#plans-individual).<br />
 Go ahead and use the student version.
 
 ## Install Visual Studio 2022 Community
 
-[here](https://visualstudio.microsoft.com/vs/)
+Download is [here](https://visualstudio.microsoft.com/vs/).  
 
 ### Workloads for VS
 
