@@ -23,7 +23,7 @@ When first entering Visual Studio, it will ask you to create a project. <br />
 &emsp; On the top right, select the green `Code` button, link shown is the repository location.<br />
 <br />
 Now, your visual studios will have all of the current files in the Solution Explorer<br />
-Be sure to run "git pull" in terminal periodically to update code.<br />
+Be sure to run `git pull` in terminal periodically to update code.<br />
 
 ## How to Commit
 First, go to "view->terminal" in Visual Studios (Look top left)<br />
