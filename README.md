@@ -5,8 +5,11 @@ Repository for ASU Capstone project in 2022, will be used to hold progress on AR
 
 ## Install Unity
 Download is [here](https://store.unity.com/#plans-individual).<br />
-Go ahead and use the student version.
+Go ahead and use the student version, install the `Unity Hub` for easier installations.  
 
+### Unity Version
+Recommended: 2020.3 LTS  
+Guide to Install with MRTK: [here](https://learn.microsoft.com/en-us/windows/mixed-reality/develop/unity/choosing-unity-version).<br />
 ## Install Visual Studio 2022 Community
 
 Download is [here](https://visualstudio.microsoft.com/vs/).  
