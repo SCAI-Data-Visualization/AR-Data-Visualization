@@ -13,8 +13,11 @@ Download is [here](https://visualstudio.microsoft.com/vs/).
 
 ### Workloads for VS
 
-Create Game Development with Unity<br />
-Visual Studio Extension Development
+● Visual Studio Extension Development<br />
+● .NET desktop development<br />
+● Desktop development with C++<br />
+● Universal Windows Platform (UWP) development<br />
+● Game development with Unity<br />
 
 ## How to Access Project so Far
 When first entering Visual Studio, it will ask you to create a project. <br />
