@@ -8,7 +8,7 @@ Download is [here](https://store.unity.com/#plans-individual).<br />
 Go ahead and use the student version, install the `Unity Hub` for easier installations.  
 
 ### Unity Version
-Recommended: 2020.3 LTS  
+Recommended: 2021.3 LTS  
 Guide to Install with MRTK: [here](https://learn.microsoft.com/en-us/windows/mixed-reality/develop/unity/choosing-unity-version).<br />
 ## Install Visual Studio 2022 Community
 
