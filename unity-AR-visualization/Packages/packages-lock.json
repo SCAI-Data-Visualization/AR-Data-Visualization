@@ -1,5 +1,15 @@
 {
   "dependencies": {
+    "com.microsoft.mixedreality.openxr": {
+      "version": "file:MixedReality/com.microsoft.mixedreality.openxr-1.5.1.tgz",
+      "depth": 0,
+      "source": "local-tarball",
+      "dependencies": {
+        "com.unity.xr.arfoundation": "4.1.7",
+        "com.unity.xr.management": "4.2.0",
+        "com.unity.xr.openxr": "1.4.2"
+      }
+    },
     "com.unity.collab-proxy": {
       "version": "1.17.2",
       "depth": 0,
