@@ -9,14 +9,14 @@ Go ahead and use the student version, install the `Unity Hub` for easier install
 
 ### Unity Version
 Recommended: 2021.3 LTS, Currently is 2021.3.11 LTS
-This link will allow mrtk to be setup on unity.
-https://learn.microsoft.com/en-us/windows/mixed-reality/develop/unity/new-openxr-project-with-mrtk#resolving-incompatible-settings
-Building it and deploy app to hololens
-https://learn.microsoft.com/en-us/windows/mixed-reality/develop/unity/build-and-deploy-to-hololens
-Using visual studios to deploy
-https://learn.microsoft.com/en-us/windows/mixed-reality/develop/advanced-concepts/using-visual-studio?tabs=hl2
-Allow a windows device to deploy to Hololens
-https://www.youtube.com/watch?v=konhPz0D07w
+This link will allow mrtk to be setup on unity.  
+https://learn.microsoft.com/en-us/windows/mixed-reality/develop/unity/new-openxr-project-with-mrtk#resolving-incompatible-settings  
+Building it and deploy app to hololens  
+https://learn.microsoft.com/en-us/windows/mixed-reality/develop/unity/build-and-deploy-to-hololens  
+Using visual studios to deploy  
+https://learn.microsoft.com/en-us/windows/mixed-reality/develop/advanced-concepts/using-visual-studio?tabs=hl2  
+Allow a windows device to deploy to Hololens  
+https://www.youtube.com/watch?v=konhPz0D07w  
 ## Install Visual Studio 2022 Community
 
 Download is [here](https://visualstudio.microsoft.com/vs/).  
