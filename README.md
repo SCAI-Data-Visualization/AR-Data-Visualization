@@ -1,5 +1,8 @@
 # AR-Data-Visualization-
-Repository for ASU Capstone project in 2022, will be used to hold progress on AR data visualization application.
+Repository for ASU Capstone project in 2022, will be used to hold progress on AR data visualization application.  
+Desktop data visualization applications struggle with limited screen space, especially while visualizing data in several ways at once. Augmented Reality offers to open up the entire physical space of a user as screen space. This project hopes to create a data visualization framework for the Hololens AR device.  
+
+
 
 # Start Here
 
@@ -8,8 +11,15 @@ Download is [here](https://store.unity.com/#plans-individual).<br />
 Go ahead and use the student version, install the `Unity Hub` for easier installations.  
 
 ### Unity Version
-Recommended: 2021.3 LTS  
-Guide to Install with MRTK: [here](https://learn.microsoft.com/en-us/windows/mixed-reality/develop/unity/choosing-unity-version).<br />
+Recommended: 2021.3 LTS, Currently is 2021.3.11 LTS
+This link will allow mrtk to be setup on unity.  
+https://learn.microsoft.com/en-us/windows/mixed-reality/develop/unity/new-openxr-project-with-mrtk#resolving-incompatible-settings  
+Building it and deploy app to hololens  
+https://learn.microsoft.com/en-us/windows/mixed-reality/develop/unity/build-and-deploy-to-hololens  
+Using visual studios to deploy  
+https://learn.microsoft.com/en-us/windows/mixed-reality/develop/advanced-concepts/using-visual-studio?tabs=hl2  
+Allow a windows device to deploy to Hololens  
+https://www.youtube.com/watch?v=konhPz0D07w  
 ## Install Visual Studio 2022 Community
 
 Download is [here](https://visualstudio.microsoft.com/vs/).  
