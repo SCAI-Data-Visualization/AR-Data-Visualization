@@ -1,5 +1,8 @@
 # AR-Data-Visualization-
-Repository for ASU Capstone project in 2022, will be used to hold progress on AR data visualization application.
+Repository for ASU Capstone project in 2022, will be used to hold progress on AR data visualization application.  
+Desktop data visualization applications struggle with limited screen space, especially while visualizing data in several ways at once. Augmented Reality offers to open up the entire physical space of a user as screen space. This project hopes to create a data visualization framework for the Hololens AR device.  
+
+
 
 # Start Here
 
