@@ -16,4 +16,9 @@ public class test : MonoBehaviour
     {
         
     }
+    // Will send out a message whenever the cube on scene is selected 
+    public void OnSelect()
+    {
+        Debug.Log("The select action works!");
+    }
 }
