@@ -14,12 +14,12 @@ namespace jsonhelpernamespace
         public string modality;
         public JsonHelper jsonHelper;
 
-        public void CreateFromJSON(string JSONString)
+        public void readJSON(string JSONString)
         {
             JsonHelper parsedFile = new JsonHelper();
-
+  
             string jsonString = File.ReadAllText(JSONString);
-
+            
             jsonHelper = parsedFile.CreateFromJSON(jsonString);
         }
     }
