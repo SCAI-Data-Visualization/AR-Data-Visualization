@@ -592,12 +592,12 @@ MonoBehaviour:
     speed: 2
     m_Value: 0.67552215
   m_Ortho:
-    m_Target: 1
+    m_Target: 0
     speed: 2
-    m_Value: 1
+    m_Value: 0
   m_CameraSettings:
-    m_Speed: 1.0646998
-    m_SpeedNormalized: 0.5299999
+    m_Speed: 1.0049999
+    m_SpeedNormalized: 0.4999999
     m_SpeedMin: 0.01
     m_SpeedMax: 2
     m_EasingEnabled: 1
@@ -608,7 +608,7 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: -0.025472995, y: -0.044378392, z: 0.0011347561, w: -0.9987003}
+  m_LastSceneViewRotation: {x: 0, y: 0, z: 0, w: 0}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -654,7 +654,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -721,7 +721,7 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/InProject
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\jesus\source\repos\SCAI-Data-Visualization\AR-Data-Visualization\unity-AR-visualization
+  m_LastProjectPath: C:\Users\lbock\Documents\Capstone\Product\AR-Data-Visualization\unity-AR-visualization
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
