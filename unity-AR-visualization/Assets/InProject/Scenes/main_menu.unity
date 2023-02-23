@@ -230,6 +230,7 @@ GameObject:
   - component: {fileID: 218222268}
   - component: {fileID: 218222270}
   - component: {fileID: 218222269}
+  - component: {fileID: 218222271}
   m_Layer: 5
   m_Name: Loaded
   m_TagString: Untagged
@@ -299,6 +300,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 218222267}
   m_CullTransparentMesh: 1
+--- !u!114 &218222271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218222267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9ce040dd34b5324fa2e089e1ded2ff9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loaded_status: 0
 --- !u!4 &408432434 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4899954742063566, guid: 690148cb58139d24ab03ee94c54c5758,
@@ -669,7 +683,7 @@ PrefabInstance:
     - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
         type: 3}
       propertyPath: ButtonReleased.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
         type: 3}
@@ -768,6 +782,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
         type: 3}
+      propertyPath: ButtonReleased.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 218222271}
+    - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
+        type: 3}
       propertyPath: TouchBegin.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
@@ -789,7 +808,7 @@ PrefabInstance:
     - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
         type: 3}
       propertyPath: ButtonReleased.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
+      value: jsonhelpernamespace.status, Assembly-CSharp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 690148cb58139d24ab03ee94c54c5758, type: 3}
@@ -868,9 +887,10 @@ MonoBehaviour:
   number: 0
   modality: 
   jsonHelper:
-    size: 
-    number: 0
-    modality: 
+    location: 
+    shape: 
+    size: 0
+    color: 
 --- !u!1 &1883144738 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1245238035927764, guid: 5a34e3cdd41732244af252f744a9b283,
@@ -984,7 +1004,7 @@ PrefabInstance:
     - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
         type: 3}
       propertyPath: ButtonReleased.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
         type: 3}
@@ -998,9 +1018,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
         type: 3}
+      propertyPath: ButtonReleased.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
+        type: 3}
       propertyPath: ButtonReleased.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1835827486}
+    - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
+        type: 3}
+      propertyPath: ButtonReleased.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 218222271}
     - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
         type: 3}
       propertyPath: ButtonPressed.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
@@ -1013,13 +1043,33 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
         type: 3}
+      propertyPath: ButtonReleased.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
+        type: 3}
       propertyPath: ButtonReleased.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: readJSON
       objectReference: {fileID: 0}
     - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
         type: 3}
+      propertyPath: ButtonReleased.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: changeStatus
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
+        type: 3}
       propertyPath: ButtonReleased.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: jsonhelpernamespace.JsonLoader, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
+        type: 3}
+      propertyPath: ButtonReleased.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: jsonhelpernamespace.status, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
+        type: 3}
+      propertyPath: ButtonReleased.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_BoolArgument
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
         type: 3}
@@ -1029,6 +1079,11 @@ PrefabInstance:
     - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
         type: 3}
       propertyPath: ButtonReleased.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
+        type: 3}
+      propertyPath: ButtonReleased.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
