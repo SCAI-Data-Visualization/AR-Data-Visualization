@@ -8,10 +8,10 @@ namespace jsonhelpernamespace
     [System.Serializable]
     public class JsonHelper
     {
-        /*TODO: Change these to match the ones in actual json files*/
-        public string size;
-        public int number;
-        public string modality;
+        public int[] location;
+        public string shape;
+        public int size;
+        public string color; //kinda lazy, dont wanna deal with defining color values in JSON - Logan
 
 
         public JsonHelper CreateFromJSON(string JSONString)

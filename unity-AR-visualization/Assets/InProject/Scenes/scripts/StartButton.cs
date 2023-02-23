@@ -18,6 +18,7 @@ namespace jsonhelpernamespace
 
         public void SceneBuilder()
         {
+            
             LoadObject.LoadingObject.SetActive(true);
             JsonHelper sceneElements = GameObject.Find("Load_File").GetComponent<JsonLoader>().jsonHelper;
             SceneManager.LoadScene("task_scene");
