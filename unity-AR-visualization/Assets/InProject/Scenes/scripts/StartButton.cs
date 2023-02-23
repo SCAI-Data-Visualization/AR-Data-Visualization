@@ -16,13 +16,20 @@ namespace jsonhelpernamespace
 
         }
 
-        public void SceneBuilder()
+        public void SceneBuilder(status status)
         {
-            LoadObject.LoadingObject.SetActive(true);
-            JsonHelper sceneElements = GameObject.Find("Load_File").GetComponent<JsonLoader>().jsonHelper;
-            SceneManager.LoadScene("task_scene");
-            scene_builder builder = new scene_builder();
-            builder.task_generate(sceneElements, prefab);
+            if (status.loaded_status == true)
+            {
+                LoadObject.LoadingObject.SetActive(true);
+                JsonHelper sceneElements = GameObject.Find("Load_File").GetComponent<JsonLoader>().jsonHelper;
+                SceneManager.LoadScene("task_scene");
+                scene_builder builder = new scene_builder();
+                builder.task_generate(sceneElements, prefab);
+            }
+            else
+            {
+                return;
+            }
         }
 
         // Update is called once per frame

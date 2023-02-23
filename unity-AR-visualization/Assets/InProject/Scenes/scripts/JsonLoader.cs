@@ -21,6 +21,10 @@ namespace jsonhelpernamespace
             string jsonString = File.ReadAllText(JSONString);
             
             jsonHelper = parsedFile.CreateFromJSON(jsonString);
+            if(jsonHelper == null)
+            {
+                Debug.LogError("No Json loaded");
+            }
         }
     }
 }

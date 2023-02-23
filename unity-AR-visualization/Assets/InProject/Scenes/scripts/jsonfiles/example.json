@@ -1,6 +1,7 @@
 {
-    "size": "large",
-    "number": 10,
-    "modality": "Jesus"
+    "location": [1,1],
+    "shape": "ball",
+    "size":  5,
+    "color": "Yellow"
 }
   
