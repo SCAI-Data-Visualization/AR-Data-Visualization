@@ -887,10 +887,11 @@ MonoBehaviour:
   number: 0
   modality: 
   jsonHelper:
-    location: 
-    shape: 
-    size: 0
+    size: 
+    task: 
     color: 
+    start: 0
+    goal: 0
 --- !u!1 &1883144738 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1245238035927764, guid: 5a34e3cdd41732244af252f744a9b283,
@@ -1074,7 +1075,7 @@ PrefabInstance:
     - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
         type: 3}
       propertyPath: ButtonReleased.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
-      value: Assets/InProject/Scenes/scripts/jsonfiles/example.json
+      value: Assets/InProject/Scenes/scripts/jsonfiles/test_click0.json
       objectReference: {fileID: 0}
     - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
         type: 3}
