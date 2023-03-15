@@ -831,7 +831,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LoadObject: {fileID: 1883144741}
-  prefab: {fileID: 5178673923274624718, guid: 9d232a957da75b14ca37661bf6cfa423, type: 3}
+  prefab: {fileID: 1856622667495492, guid: aed31e89e13142a45847dd8cdd8c77a0, type: 3}
 --- !u!1 &1825890239
 GameObject:
   m_ObjectHideFlags: 0
