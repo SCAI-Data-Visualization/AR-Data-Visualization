@@ -24,6 +24,9 @@ namespace jsonhelpernamespace
             if(jsonHelper == null)
             {
                 Debug.LogError("No Json loaded");
+            } else
+            {
+                SceneBuilderController.jsonHelper = jsonHelper;
             }
         }
     }

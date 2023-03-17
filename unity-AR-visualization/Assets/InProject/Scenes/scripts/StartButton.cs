@@ -23,7 +23,6 @@ namespace jsonhelpernamespace
                 LoadObject.LoadingObject.SetActive(true);
                 JsonHelper sceneElements = GameObject.Find("Load_File").GetComponent<JsonLoader>().jsonHelper;
                 SceneBuilderController.gameObject = prefab;
-                SceneBuilderController.jsonHelper = sceneElements;
                 SceneManager.LoadScene("task_scene");
             }
             else

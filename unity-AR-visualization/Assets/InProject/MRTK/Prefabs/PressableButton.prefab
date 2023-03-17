@@ -457,6 +457,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4894033903586032}
   - component: {fileID: 114437542460993462}
+  - component: {fileID: -3037663182254076939}
   m_Layer: 0
   m_Name: PressableButton
   m_TagString: Untagged
@@ -500,6 +501,19 @@ MonoBehaviour:
   OnSelectionEvents:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &-3037663182254076939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1856622667495492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &1902042423272936
 GameObject:
   m_ObjectHideFlags: 0

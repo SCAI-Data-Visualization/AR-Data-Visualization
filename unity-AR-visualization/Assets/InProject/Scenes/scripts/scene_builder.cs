@@ -5,6 +5,8 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Rendering;
+using UnityEngine.EventSystems;
+//using System.Diagnostics;
 
 namespace jsonhelpernamespace
 {
@@ -30,15 +32,17 @@ namespace jsonhelpernamespace
 
             //EventTrigger trigger = GetComponent<EventTrigger>();
             EventTrigger.Entry entry = new EventTrigger.Entry();
-            entry.eventID = EventTriggerType.PointerClick;
-            entry.callback.AddListener((eventData) => { onClick(); });
-            trigger.triggers.Add(entry);
+            entry.eventID = EventTriggerType.Select;
+            entry.callback.AddListener((eventData) => { Debug.Log("Mkaljdflkjasdlfkj"); });
+            //trigger.triggers.Add(entry);
             Button.GetComponent<EventTrigger>().triggers.Add(entry);
         }
 
-        void onClick()
+        public void onClick()
         {
-            Console.WriteLine("Made it with click");
+            Debug.Log("Made it with click");
+            // Read in json file from JsonLoader.cs
+            // Call load scene again 
         }
 
         //Option 1. add event listener to the prefab in the start function
@@ -47,8 +51,6 @@ namespace jsonhelpernamespace
         //Option 2. write an on click function in this script and attach it 
         //          to the object that is made in unity (unsure if this will
         //          work because the prefab is not premade
-
-        // Update is called once per frame
 
         // Update is called once per frame
         void Update()
