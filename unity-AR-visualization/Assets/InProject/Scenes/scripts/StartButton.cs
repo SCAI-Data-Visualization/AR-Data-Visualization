@@ -22,9 +22,8 @@ namespace jsonhelpernamespace
             {
                 LoadObject.LoadingObject.SetActive(true);
                 JsonHelper sceneElements = GameObject.Find("Load_File").GetComponent<JsonLoader>().jsonHelper;
+                SceneBuilderController.prefab = prefab;
                 SceneManager.LoadScene("task_scene");
-                scene_builder builder = new scene_builder();
-                builder.task_generate(sceneElements, prefab);
             }
             else
             {
