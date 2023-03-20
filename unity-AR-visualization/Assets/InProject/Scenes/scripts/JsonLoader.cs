@@ -25,10 +25,31 @@ namespace jsonhelpernamespace
                 }
             }
         }
-        public void readJSON()
-        {
+        public void readJSON() 
+        {   
             JsonHelper parsedFile = new JsonHelper();
-            string pathString = "Assets/InProject/Scenes/scripts/jsonfiles/test_click" + SceneBuilderController.level_list[SceneBuilderController.level_num] + ".json";
+            string pathString;
+            if (SceneBuilderController.level_num < 3)
+            {
+                pathString = "Assets/InProject/Scenes/scripts/jsonfiles/test_click" + SceneBuilderController.level_list[SceneBuilderController.level_num % 3] + ".json";
+            }
+            else if (SceneBuilderController.level_num < 6)
+            {
+                pathString = "Assets/InProject/Scenes/scripts/jsonfiles/test_drag" + SceneBuilderController.level_list[SceneBuilderController.level_num % 3] + ".json";
+            }
+/*            else if (SceneBuilderController.level_num < 9)
+            {
+                pathString = "Assets/InProject/Scenes/scripts/jsonfiles/test_pan" + SceneBuilderController.level_list[SceneBuilderController.level_num % 3] + ".json";
+            }
+            else if (SceneBuilderController.level_num < 12)
+            {
+                pathString = "Assets/InProject/Scenes/scripts/jsonfiles/test_zoom" + SceneBuilderController.level_list[SceneBuilderController.level_num % 3] + ".json";
+            }*/
+            else
+            {
+                pathString = "ERROR";
+            }
+
             Debug.Log("File path loaded is " + pathString);
             string jsonString = File.ReadAllText(pathString);
             

@@ -1,6 +1,7 @@
 using jsonhelpernamespace;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -26,6 +27,7 @@ namespace jsonhelpernamespace
             SceneBuilderController.level_num = (SceneBuilderController.level_num + 1);
             load.readJSON();
             SceneManager.LoadScene("task_scene");
+         
         }
     }
 }
