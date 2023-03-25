@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 namespace jsonhelpernamespace
 {
-    public class task_transition : MonoBehaviour
+    public class continue_transition : MonoBehaviour
     {
         // Start is called before the first frame update
         void Start()
@@ -22,7 +22,11 @@ namespace jsonhelpernamespace
         }
         public void transition()
         {
-            SceneManager.LoadScene("task_finished");
+            Debug.Log("Made it with click");
+            JsonLoader load = new JsonLoader();
+            SceneBuilderController.level_num = (SceneBuilderController.level_num + 1);
+            load.readJSON();
+            SceneManager.LoadScene("task_scene");
         }
     }
 }

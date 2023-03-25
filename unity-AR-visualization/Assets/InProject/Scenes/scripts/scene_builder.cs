@@ -18,7 +18,7 @@ namespace jsonhelpernamespace
         // Start is called before the first frame update
         void Start()
         {
-
+            Debug.Log("STARTING BUILD");
             sceneElements = SceneBuilderController.jsonHelper; 
             prefab = SceneBuilderController.prefab;
             GameObject SpawnPoint = GameObject.Find("SpawnPoint");
