@@ -18,7 +18,6 @@ namespace jsonhelpernamespace
         // Start is called before the first frame update
         void Start()
         {
-
             sceneElements = SceneBuilderController.jsonHelper;
             if (sceneElements.task == "click")
             {
@@ -54,11 +53,8 @@ namespace jsonhelpernamespace
                     Debug.Log("Im here!");
                 }
             }
-
-
             JsonHelper.coordinateReader(sceneElements);
         }
-
 
         void Update()
         {

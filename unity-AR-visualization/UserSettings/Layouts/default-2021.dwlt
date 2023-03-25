@@ -513,7 +513,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 0}
+      snapOffset: {x: 0, y: 25}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: unity-scene-view-toolbar
@@ -736,7 +736,7 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -0.020964429, y: -0.056956735, z: 0.0011963049, w: -0.998157}
   m_Size:
-    m_Target: 1.2945957
+    m_Target: 1.0768312
     speed: 2
     m_Value: 1.2945957
   m_Ortho:
