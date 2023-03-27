@@ -10,7 +10,9 @@ namespace jsonhelpernamespace
     {
         // Start is called before the first frame update
         public LoadingObjectController LoadObject; 
-        public GameObject prefab;
+        public GameObject prefab_click;
+        public GameObject prefab_drag;
+        public GameObject prefab_drag_goal;
         void Start()
         {
 
@@ -22,7 +24,9 @@ namespace jsonhelpernamespace
             {
                 LoadObject.LoadingObject.SetActive(true);
                 JsonHelper sceneElements = GameObject.Find("Load_File").GetComponent<JsonLoader>().jsonHelper;
-                SceneBuilderController.prefab = prefab;
+                SceneBuilderController.prefab_click = prefab_click;
+                SceneBuilderController.prefab_drag = prefab_drag;
+                SceneBuilderController.prefab_drag_goal = prefab_drag_goal;
                 SceneManager.LoadScene("task_scene");
             }
             else

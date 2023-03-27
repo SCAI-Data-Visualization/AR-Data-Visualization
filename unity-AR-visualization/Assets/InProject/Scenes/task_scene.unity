@@ -535,7 +535,7 @@ MonoBehaviour:
     color: 
     start: 0
     goal: 0
-  prefab: []
+  prefab: {fileID: 0}
 --- !u!1 &2068114696
 GameObject:
   m_ObjectHideFlags: 0
