@@ -583,7 +583,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4899954742063566, guid: 690148cb58139d24ab03ee94c54c5758, type: 3}
       propertyPath: m_LocalScale.z
-      value: -30
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 4899954742063566, guid: 690148cb58139d24ab03ee94c54c5758, type: 3}
       propertyPath: m_LocalPosition.x
@@ -595,7 +595,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4899954742063566, guid: 690148cb58139d24ab03ee94c54c5758, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.0000327
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4899954742063566, guid: 690148cb58139d24ab03ee94c54c5758, type: 3}
       propertyPath: m_LocalRotation.w
@@ -632,18 +632,38 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
         type: 3}
-      propertyPath: TouchBegin.m_PersistentCalls.m_Calls.Array.size
+      propertyPath: enforceFrontPush
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
+        type: 3}
+      propertyPath: TouchEnd.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
         type: 3}
+      propertyPath: TouchBegin.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
+        type: 3}
       propertyPath: ButtonPressed.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
         type: 3}
       propertyPath: ButtonReleased.m_PersistentCalls.m_Calls.Array.size
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
+        type: 3}
+      propertyPath: TouchEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
+        type: 3}
+      propertyPath: TouchEnd.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
         type: 3}
@@ -653,13 +673,18 @@ PrefabInstance:
     - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
         type: 3}
       propertyPath: TouchBegin.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
         type: 3}
       propertyPath: TouchBegin.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
+        type: 3}
+      propertyPath: TouchEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1366689034}
     - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
         type: 3}
       propertyPath: TouchBegin.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -669,7 +694,7 @@ PrefabInstance:
         type: 3}
       propertyPath: TouchBegin.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1366689039}
     - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
         type: 3}
       propertyPath: ButtonPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -678,12 +703,27 @@ PrefabInstance:
     - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
         type: 3}
       propertyPath: ButtonPressed.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 1
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
+        type: 3}
+      propertyPath: TouchEnd.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
+        type: 3}
+      propertyPath: ButtonReleased.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
         type: 3}
       propertyPath: ButtonReleased.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 2
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
+        type: 3}
+      propertyPath: TouchEnd.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnHandPressCompleted
       objectReference: {fileID: 0}
     - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
         type: 3}
@@ -694,7 +734,7 @@ PrefabInstance:
         type: 3}
       propertyPath: ButtonPressed.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1366689039}
     - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
         type: 3}
       propertyPath: TouchBegin.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
@@ -707,18 +747,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
         type: 3}
-      propertyPath: ButtonReleased.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      propertyPath: ButtonReleased.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1366689039}
     - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
         type: 3}
-      propertyPath: TouchBegin.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      propertyPath: ButtonReleased.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
+      objectReference: {fileID: 1366689034}
+    - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
+        type: 3}
+      propertyPath: TouchBegin.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnHandPressTouched
       objectReference: {fileID: 0}
     - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
         type: 3}
       propertyPath: TouchBegin.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: OnPress
+      value: SceneBuilder
       objectReference: {fileID: 0}
     - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
         type: 3}
@@ -728,12 +773,12 @@ PrefabInstance:
     - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
         type: 3}
       propertyPath: ButtonPressed.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: 
+      value: OnHandPressTriggered
       objectReference: {fileID: 0}
     - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
         type: 3}
       propertyPath: ButtonPressed.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: OnPress
+      value: SceneBuilder
       objectReference: {fileID: 0}
     - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
         type: 3}
@@ -742,18 +787,33 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
         type: 3}
-      propertyPath: ButtonReleased.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      propertyPath: ButtonReleased.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: SceneBuilder
       objectReference: {fileID: 0}
     - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
         type: 3}
+      propertyPath: ButtonReleased.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: OnHandPressCompleted
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
+        type: 3}
+      propertyPath: TouchEnd.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Microsoft.MixedReality.Toolkit.PhysicalPressEventRouter, Microsoft.MixedReality.Toolkit.SDK
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
+        type: 3}
+      propertyPath: TouchEnd.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: jsonhelpernamespace.StartButton, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
+        type: 3}
       propertyPath: TouchBegin.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Microsoft.MixedReality.Toolkit.start, Assembly-CSharp
+      value: Microsoft.MixedReality.Toolkit.PhysicalPressEventRouter, Microsoft.MixedReality.Toolkit.SDK
       objectReference: {fileID: 0}
     - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
         type: 3}
       propertyPath: TouchBegin.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: Microsoft.MixedReality.Toolkit.start, Assembly-CSharp
+      value: jsonhelpernamespace.StartButton, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
         type: 3}
@@ -762,19 +822,34 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
         type: 3}
+      propertyPath: TouchEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
+        type: 3}
       propertyPath: ButtonPressed.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Microsoft.MixedReality.Toolkit.start, Assembly-CSharp
+      value: Microsoft.MixedReality.Toolkit.PhysicalPressEventRouter, Microsoft.MixedReality.Toolkit.SDK
       objectReference: {fileID: 0}
     - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
         type: 3}
       propertyPath: ButtonPressed.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: Microsoft.MixedReality.Toolkit.start, Assembly-CSharp
+      value: jsonhelpernamespace.StartButton, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
+        type: 3}
+      propertyPath: ButtonReleased.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: jsonhelpernamespace.StartButton, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
         type: 3}
       propertyPath: ButtonReleased.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: jsonhelpernamespace.StartButton, Assembly-CSharp
+      value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
+        type: 3}
+      propertyPath: TouchBegin.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 218222271}
     - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
         type: 3}
       propertyPath: TouchBegin.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
@@ -782,9 +857,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
         type: 3}
-      propertyPath: ButtonReleased.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      propertyPath: ButtonPressed.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 218222271}
+    - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
+        type: 3}
+      propertyPath: ButtonReleased.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 218222271}
+    - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
+        type: 3}
+      propertyPath: ButtonReleased.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
+        type: 3}
+      propertyPath: TouchEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
         type: 3}
       propertyPath: TouchBegin.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -793,7 +883,7 @@ PrefabInstance:
     - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
         type: 3}
       propertyPath: TouchBegin.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
+      value: jsonhelpernamespace.status, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
         type: 3}
@@ -803,12 +893,17 @@ PrefabInstance:
     - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
         type: 3}
       propertyPath: ButtonPressed.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
+      value: jsonhelpernamespace.status, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
+        type: 3}
+      propertyPath: ButtonReleased.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: jsonhelpernamespace.status, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
         type: 3}
       propertyPath: ButtonReleased.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: jsonhelpernamespace.status, Assembly-CSharp
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 690148cb58139d24ab03ee94c54c5758, type: 3}
@@ -849,7 +944,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LoadObject: {fileID: 1883144741}
-  prefab: {fileID: 1856622667495492, guid: aed31e89e13142a45847dd8cdd8c77a0, type: 3}
+  prefab_click: {fileID: 1856622667495492, guid: aed31e89e13142a45847dd8cdd8c77a0,
+    type: 3}
+  prefab_drag: {fileID: 1856622667495492, guid: 83bc290a948761d40aee64d2e1727af6,
+    type: 3}
+  prefab_drag_goal: {fileID: 6293782215702940639, guid: ef0986b11bbc3bf43821d94989625af1,
+    type: 3}
 --- !u!1 &1825890239
 GameObject:
   m_ObjectHideFlags: 0
@@ -965,7 +1065,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4899954742063566, guid: 690148cb58139d24ab03ee94c54c5758, type: 3}
       propertyPath: m_LocalScale.z
-      value: -30
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 4899954742063566, guid: 690148cb58139d24ab03ee94c54c5758, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1014,6 +1114,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
         type: 3}
+      propertyPath: enforceFrontPush
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
+        type: 3}
+      propertyPath: TouchBegin.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
+        type: 3}
       propertyPath: ButtonPressed.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -1022,6 +1132,36 @@ PrefabInstance:
       propertyPath: ButtonReleased.m_PersistentCalls.m_Calls.Array.size
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
+        type: 3}
+      propertyPath: TouchBegin.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
+        type: 3}
+      propertyPath: TouchBegin.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
+        type: 3}
+      propertyPath: TouchBegin.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
+        type: 3}
+      propertyPath: TouchBegin.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1835827486}
+    - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
+        type: 3}
+      propertyPath: TouchBegin.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1835827486}
+    - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
+        type: 3}
+      propertyPath: TouchBegin.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 218222271}
     - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
         type: 3}
       propertyPath: ButtonPressed.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
@@ -1044,6 +1184,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
         type: 3}
+      propertyPath: TouchBegin.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
+        type: 3}
+      propertyPath: TouchBegin.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
+        type: 3}
+      propertyPath: TouchBegin.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
+        type: 3}
       propertyPath: ButtonReleased.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1835827486}
@@ -1057,6 +1212,21 @@ PrefabInstance:
       propertyPath: ButtonReleased.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
       objectReference: {fileID: 218222271}
+    - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
+        type: 3}
+      propertyPath: TouchBegin.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: level_randomizer
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
+        type: 3}
+      propertyPath: TouchBegin.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: readJSON
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
+        type: 3}
+      propertyPath: TouchBegin.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: changeStatus
+      objectReference: {fileID: 0}
     - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
         type: 3}
       propertyPath: ButtonPressed.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
@@ -1094,6 +1264,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
         type: 3}
+      propertyPath: TouchBegin.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: jsonhelpernamespace.JsonLoader, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
+        type: 3}
+      propertyPath: TouchBegin.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: jsonhelpernamespace.JsonLoader, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
+        type: 3}
+      propertyPath: TouchBegin.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: jsonhelpernamespace.status, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
+        type: 3}
+      propertyPath: TouchBegin.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
+        type: 3}
       propertyPath: ButtonReleased.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: jsonhelpernamespace.JsonLoader, Assembly-CSharp
       objectReference: {fileID: 0}
@@ -1110,12 +1300,12 @@ PrefabInstance:
     - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
         type: 3}
       propertyPath: ButtonReleased.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
         type: 3}
       propertyPath: ButtonReleased.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_BoolArgument
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
         type: 3}
@@ -1126,6 +1316,21 @@ PrefabInstance:
         type: 3}
       propertyPath: ButtonReleased.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
+        type: 3}
+      propertyPath: TouchBegin.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
+        type: 3}
+      propertyPath: TouchBegin.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
+        type: 3}
+      propertyPath: TouchBegin.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7078737478723734038, guid: 690148cb58139d24ab03ee94c54c5758,
         type: 3}
