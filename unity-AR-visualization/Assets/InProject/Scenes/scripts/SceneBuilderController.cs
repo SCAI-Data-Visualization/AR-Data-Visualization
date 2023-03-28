@@ -12,6 +12,8 @@ namespace jsonhelpernamespace
         public static GameObject prefab_drag_goal;
         public static JsonHelper jsonHelper;
         public static List<int> level_list;
-        public static int level_num;
+        public static int level_num = -1;
+        public static int currentIndex;
+        public static bool oneJSON = false; 
     }
 }

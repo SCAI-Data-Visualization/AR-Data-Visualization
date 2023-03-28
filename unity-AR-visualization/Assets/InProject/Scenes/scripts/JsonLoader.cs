@@ -62,5 +62,44 @@ namespace jsonhelpernamespace
                 SceneBuilderController.jsonHelper = jsonHelper;
             }
         }
+
+        public void readOneJSON()
+        {
+            SceneBuilderController.oneJSON = true; 
+            JsonHelper parsedFile = new JsonHelper();
+            string pathString;
+            int num = Random.Range(0, 3);
+            if (SceneBuilderController.currentIndex == 0)
+            {
+                pathString = "Assets/InProject/Scenes/scripts/jsonfiles/test_click" + num + ".json";
+            }
+            else if(SceneBuilderController.currentIndex == 1)
+            {
+                pathString = "Assets/InProject/Scenes/scripts/jsonfiles/test_drag" + num + ".json";
+            }
+            /* else if(SceneBuilderController.currentIndex == 2)
+             {
+                 pathString = "Assets/InProject/Scenes/scripts/jsonfiles/test_pan" + SceneBuilderController.level_list[num] + ".json";
+             }
+             else if (SceneBuilderController.currentIndex == 3)
+             {
+                 pathString = "Assets/InProject/Scenes/scripts/jsonfiles/test_zoom" + SceneBuilderController.level_list[num] + ".json";
+             }*/
+            else
+            {
+                pathString = "ERROR";
+            }
+            string jsonString = File.ReadAllText(pathString);
+            jsonHelper = parsedFile.CreateFromJSON(jsonString);
+            if (jsonHelper == null)
+            {
+                Debug.LogError("No Json loaded");
+            }
+            else
+            {
+                SceneBuilderController.jsonHelper = jsonHelper;
+                Debug.Log(SceneBuilderController.jsonHelper);
+            }
+        }
     }
-}
+    }
