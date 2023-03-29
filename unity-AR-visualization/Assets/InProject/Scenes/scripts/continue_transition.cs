@@ -23,10 +23,19 @@ namespace jsonhelpernamespace
         public void transition()
         {
             Debug.Log("Made it with click");
-            JsonLoader load = new JsonLoader();
-            SceneBuilderController.level_num = (SceneBuilderController.level_num + 1);
-            load.readJSON();
-            SceneManager.LoadScene("task_scene");
+            if(SceneBuilderController.level_num != -1)
+            {
+                JsonLoader load = new JsonLoader();
+                SceneBuilderController.level_num = (SceneBuilderController.level_num + 1);
+                load.readJSON();
+                SceneManager.LoadScene("task_scene");
+            }
+            else if(SceneBuilderController.oneJSON == true)
+            {
+                SceneBuilderController.oneJSON = false;
+                SceneManager.LoadScene("main_menu");
+            }
+            
         }
     }
 }

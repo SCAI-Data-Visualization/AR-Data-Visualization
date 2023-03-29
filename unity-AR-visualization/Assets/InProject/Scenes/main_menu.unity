@@ -3613,7 +3613,32 @@ MonoBehaviour:
   currentIndex: -1
   OnSelectionEvents:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 249180280000454937}
+        m_TargetAssemblyTypeName: Microsoft.MixedReality.Toolkit.UI.InteractionController,
+          Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 249180280000454936}
+        m_TargetAssemblyTypeName: jsonhelpernamespace.JsonLoader, Assembly-CSharp
+        m_MethodName: readOneJSON
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &208692912087085093
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4715,6 +4740,9 @@ GameObject:
   m_Component:
   - component: {fileID: 243968072278463395}
   - component: {fileID: 208657504035239653}
+  - component: {fileID: 249180280000454936}
+  - component: {fileID: 249180280000454937}
+  - component: {fileID: 249180280000454938}
   m_Layer: 0
   m_Name: RadialSet_Interaction
   m_TagString: Untagged
@@ -4722,6 +4750,51 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &249180280000454936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 249180280000454935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09c60485075d24f4e9ef669173b1c3ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jsonHelper:
+    size: 
+    task: 
+    color: 
+    start: 0
+    goal: 0
+--- !u!114 &249180280000454937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 249180280000454935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 935e3ccb01a020049bc738fc1b6f9516, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactable: {fileID: 208657504035239653}
+  RadialSelector: {fileID: 0}
+--- !u!114 &249180280000454938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 249180280000454935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9ce040dd34b5324fa2e089e1ded2ff9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loaded_status: 0
 --- !u!1 &249193997826172585
 GameObject:
   m_ObjectHideFlags: 0

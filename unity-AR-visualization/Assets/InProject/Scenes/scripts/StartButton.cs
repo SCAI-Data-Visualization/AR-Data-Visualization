@@ -29,6 +29,15 @@ namespace jsonhelpernamespace
                 SceneBuilderController.prefab_drag_goal = prefab_drag_goal;
                 SceneManager.LoadScene("task_scene");
             }
+            else if(SceneBuilderController.oneJSON)
+            {
+                LoadObject.LoadingObject.SetActive(true);
+                JsonHelper sceneElements = GameObject.Find("RadialSet_Interaction").GetComponent<JsonLoader>().jsonHelper;
+                SceneBuilderController.prefab_click = prefab_click;
+                SceneBuilderController.prefab_drag = prefab_drag;
+                SceneBuilderController.prefab_drag_goal = prefab_drag_goal;
+                SceneManager.LoadScene("task_scene");
+            }
             else
             {
                 return;
