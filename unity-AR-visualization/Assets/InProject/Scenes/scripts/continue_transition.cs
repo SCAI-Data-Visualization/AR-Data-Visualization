@@ -22,7 +22,6 @@ namespace jsonhelpernamespace
         }
         public void transition()
         {
-            Debug.Log("Made it with click");
             if(SceneBuilderController.level_num != -1)
             {
                 JsonLoader load = new JsonLoader();
