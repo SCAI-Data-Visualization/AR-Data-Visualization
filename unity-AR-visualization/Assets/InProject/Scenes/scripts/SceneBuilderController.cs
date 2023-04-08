@@ -14,6 +14,7 @@ namespace jsonhelpernamespace
         public static List<int> level_list;
         public static int level_num = -1;
         public static int currentIndex;
-        public static bool oneJSON = false; 
+        public static bool oneJSON = false;
+        public static string timerFinal;
     }
 }

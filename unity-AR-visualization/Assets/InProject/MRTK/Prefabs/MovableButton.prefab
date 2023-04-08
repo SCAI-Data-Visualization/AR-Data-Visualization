@@ -217,6 +217,7 @@ GameObject:
   - component: {fileID: 3425998559082664003}
   - component: {fileID: 4659831139731147533}
   - component: {fileID: 729229363162250931}
+  - component: {fileID: 968646484688541183}
   m_Layer: 0
   m_Name: Radial
   m_TagString: Untagged
@@ -391,7 +392,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hostTransform: {fileID: 4204519244856280}
   manipulationType: 3
-  twoHandedManipulationType: 7
+  twoHandedManipulationType: -1
   allowFarManipulation: 1
   useForcesForNearManipulation: 0
   oneHandRotationModeNear: 0
@@ -461,7 +462,24 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
+--- !u!114 &968646484688541183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1819661643076908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 149fa3ae453128b41940b5caa905f8ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handType: 3
+  proximityType: 3
+  executionOrder: 0
+  constraintOnMovement: 4
+  useLocalSpaceForConstraint: 0
 --- !u!1 &1856622667495492
 GameObject:
   m_ObjectHideFlags: 0
