@@ -53,3 +53,10 @@ How to Commit to Repository (In VS terminal):<br />
 &emsp; 2. `git commit` <br /> 
 &emsp; 3. VIM text editor will open in terminal, press `i` to insert and type commit message, then hit "esc" and type `:wq` to save and quit. <br />
 &emsp; 4. `git push` <br />
+
+## Android Development
+Installing Android Studio is crucical to deploy Android applications/
+https://developer.android.com/studio
+Install Android Studio
+https://developer.android.com/studio/debug/dev-options#:~:text=Enable%20Developer%20options,-On%20Android%204.1&text=Tap%20the%20Build%20Number%20option,Developer%20options%20at%20the%20bottom.
+Enable Android Dev Options
