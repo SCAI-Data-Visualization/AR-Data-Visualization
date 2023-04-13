@@ -17,6 +17,7 @@ namespace jsonhelpernamespace
         {
             // Update the timeElapsed variable with the time that has passed since the game started
             timeElapsed += Time.deltaTime;
+            SceneBuilderController.total_time += Time.deltaTime;
         }
     }
 }

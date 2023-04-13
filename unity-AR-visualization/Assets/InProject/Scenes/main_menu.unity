@@ -951,6 +951,10 @@ MonoBehaviour:
     type: 3}
   prefab_drag_goal: {fileID: 6293782215702940639, guid: ef0986b11bbc3bf43821d94989625af1,
     type: 3}
+  prefab_zoom: {fileID: 2355495484527499157, guid: 6c89bc5604d9301419e718307576c8a2,
+    type: 3}
+  prefab_zoom_goal: {fileID: 2355495484527499157, guid: 33a3a06999086d74192f82febb4e8ead,
+    type: 3}
 --- !u!1 &1825890239
 GameObject:
   m_ObjectHideFlags: 0
@@ -4762,7 +4766,6 @@ GameObject:
   - component: {fileID: 208657504035239653}
   - component: {fileID: 249180280000454936}
   - component: {fileID: 249180280000454937}
-  - component: {fileID: 249180280000454938}
   m_Layer: 0
   m_Name: RadialSet_Interaction
   m_TagString: Untagged
@@ -4802,19 +4805,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactable: {fileID: 208657504035239653}
   RadialSelector: {fileID: 0}
---- !u!114 &249180280000454938
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 249180280000454935}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9ce040dd34b5324fa2e089e1ded2ff9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  loaded_status: 0
 --- !u!1 &249193997826172585
 GameObject:
   m_ObjectHideFlags: 0

@@ -19,6 +19,10 @@ namespace jsonhelpernamespace
             {
                 SceneManager.LoadScene("task_finished");
             }
+            else if (collision.gameObject.name == "zoom_cube" || collision.gameObject.name == "zoom_cube(Clone)")
+            {
+                SceneManager.LoadScene("task_finished");
+            }
 
         }
     }

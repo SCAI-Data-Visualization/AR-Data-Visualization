@@ -37,11 +37,11 @@ namespace jsonhelpernamespace
             {
                 pathString = "Assets/InProject/Scenes/scripts/jsonfiles/test_drag" + SceneBuilderController.level_list[SceneBuilderController.level_num % 3] + ".json";
             }
-/*            else if (SceneBuilderController.level_num < 9)
+            else if (SceneBuilderController.level_num < 9)
             {
-                pathString = "Assets/InProject/Scenes/scripts/jsonfiles/test_pan" + SceneBuilderController.level_list[SceneBuilderController.level_num % 3] + ".json";
+                pathString = "Assets/InProject/Scenes/scripts/jsonfiles/test_zoom" + SceneBuilderController.level_list[SceneBuilderController.level_num % 3] + ".json";
             }
-            else if (SceneBuilderController.level_num < 12)
+            /*else if (SceneBuilderController.level_num < 12)
             {
                 pathString = "Assets/InProject/Scenes/scripts/jsonfiles/test_zoom" + SceneBuilderController.level_list[SceneBuilderController.level_num % 3] + ".json";
             }*/
@@ -77,20 +77,22 @@ namespace jsonhelpernamespace
             {
                 pathString = "Assets/InProject/Scenes/scripts/jsonfiles/test_drag" + num + ".json";
             }
-            /* else if(SceneBuilderController.currentIndex == 2)
+            else if (SceneBuilderController.currentIndex == 2)
+            {
+                SceneBuilderController.panTask = true;
+                return;
+    }
+            else if (SceneBuilderController.currentIndex == 3)
              {
-                 pathString = "Assets/InProject/Scenes/scripts/jsonfiles/test_pan" + SceneBuilderController.level_list[num] + ".json";
+                 pathString = "Assets/InProject/Scenes/scripts/jsonfiles/test_zoom" + num + ".json";
              }
-             else if (SceneBuilderController.currentIndex == 3)
-             {
-                 pathString = "Assets/InProject/Scenes/scripts/jsonfiles/test_zoom" + SceneBuilderController.level_list[num] + ".json";
-             }*/
             else
             {
                 pathString = "ERROR";
             }
             string jsonString = File.ReadAllText(pathString);
             jsonHelper = parsedFile.CreateFromJSON(jsonString);
+            Debug.Log(pathString);
             if (jsonHelper == null)
             {
                 Debug.LogError("No Json loaded");
@@ -98,7 +100,7 @@ namespace jsonhelpernamespace
             else
             {
                 SceneBuilderController.jsonHelper = jsonHelper;
-                Debug.Log(SceneBuilderController.jsonHelper);
+
             }
         }
     }

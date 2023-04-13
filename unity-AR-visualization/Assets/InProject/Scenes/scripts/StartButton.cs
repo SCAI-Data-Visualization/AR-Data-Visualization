@@ -13,35 +13,41 @@ namespace jsonhelpernamespace
         public GameObject prefab_click;
         public GameObject prefab_drag;
         public GameObject prefab_drag_goal;
+        public GameObject prefab_zoom;
+        public GameObject prefab_zoom_goal;
         void Start()
         {
-
+            SceneBuilderController.panTask = false;
+            SceneBuilderController.total_time = 0;
         }
 
         public void SceneBuilder(status status)
         {
+            LoadObject.LoadingObject.SetActive(true);
             if (status.loaded_status == true)
             {
-                LoadObject.LoadingObject.SetActive(true);
                 JsonHelper sceneElements = GameObject.Find("Load_File").GetComponent<JsonLoader>().jsonHelper;
-                SceneBuilderController.prefab_click = prefab_click;
-                SceneBuilderController.prefab_drag = prefab_drag;
-                SceneBuilderController.prefab_drag_goal = prefab_drag_goal;
-                SceneManager.LoadScene("task_scene");
             }
-            else if(SceneBuilderController.oneJSON)
+            else if (SceneBuilderController.panTask)
             {
-                LoadObject.LoadingObject.SetActive(true);
+                Debug.Log("PAN MODE");
+                SceneManager.LoadScene("pan_scene");
+                return;
+            }
+            else if (SceneBuilderController.oneJSON)
+            {
                 JsonHelper sceneElements = GameObject.Find("RadialSet_Interaction").GetComponent<JsonLoader>().jsonHelper;
-                SceneBuilderController.prefab_click = prefab_click;
-                SceneBuilderController.prefab_drag = prefab_drag;
-                SceneBuilderController.prefab_drag_goal = prefab_drag_goal;
-                SceneManager.LoadScene("task_scene");
             }
             else
             {
                 return;
             }
+            SceneBuilderController.prefab_click = prefab_click;
+            SceneBuilderController.prefab_drag = prefab_drag;
+            SceneBuilderController.prefab_drag_goal = prefab_drag_goal;
+            SceneBuilderController.prefab_zoom = prefab_zoom;
+            SceneBuilderController.prefab_zoom_goal = prefab_zoom_goal;
+            SceneManager.LoadScene("task_scene");
         }
 
         // Update is called once per frame

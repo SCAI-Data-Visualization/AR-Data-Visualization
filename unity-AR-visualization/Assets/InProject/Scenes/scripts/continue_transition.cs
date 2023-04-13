@@ -22,7 +22,17 @@ namespace jsonhelpernamespace
         }
         public void transition()
         {
-            if(SceneBuilderController.level_num != -1)
+            if (SceneBuilderController.level_num == 8)
+            {
+                SceneBuilderController.level_num = (SceneBuilderController.level_num + 1);
+                SceneManager.LoadScene("pan_scene");
+            }
+/*            else if (SceneBuilderController.level_num == 9)
+            {
+                SceneBuilderController.level_num = (SceneBuilderController.level_num + 1);
+                SceneManager.LoadScene("pan_scene");
+            }*/
+            else if (SceneBuilderController.level_num != -1)
             {
                 JsonLoader load = new JsonLoader();
                 SceneBuilderController.level_num = (SceneBuilderController.level_num + 1);

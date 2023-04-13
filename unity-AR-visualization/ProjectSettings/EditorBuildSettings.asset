@@ -17,6 +17,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/InProject/Scenes/task_finished.unity
     guid: a0b8e777838b56543863829928a2bcf5
+  - enabled: 1
+    path: Assets/InProject/Scenes/pan_scene.unity
+    guid: 397972962b4c9e84d82c0d34b66cdb32
+  - enabled: 1
+    path: Assets/InProject/Scenes/trial_complete.unity
+    guid: 97c41c31d290b2146be5628bc2edd1a9
   m_configObjects:
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: 744b813df90924c169af73489b8325de,
       type: 2}
