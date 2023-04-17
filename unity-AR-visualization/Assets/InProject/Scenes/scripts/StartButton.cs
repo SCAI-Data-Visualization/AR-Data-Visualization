@@ -47,7 +47,7 @@ namespace jsonhelpernamespace
             SceneBuilderController.prefab_drag_goal = prefab_drag_goal;
             SceneBuilderController.prefab_zoom = prefab_zoom;
             SceneBuilderController.prefab_zoom_goal = prefab_zoom_goal;
-            SceneManager.LoadScene("task_scene");
+            SceneManager.LoadSceneAsync("task_scene", LoadSceneMode.Single);
         }
 
         // Update is called once per frame
